@@ -1,0 +1,12 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+    <h1 class="text-center mb-4">Welcome to the Movie Recommender!</h1>
+    <form action="/recommend" method="post">
+        <div class="form-group">
+            <label for="movies">Enter your favorite movies, separated by commas:</label>
+            <input type="text" class="form-control" name="movies" id="movies" required>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Get recommendations</button>
+    </form>
+{% endblock %}
